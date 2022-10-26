@@ -62,9 +62,9 @@ console.log(`Ketvirta----------`);
 let f = Math.round(Math.random() * 10);
 let g = Math.round(Math.random() * 10);
 let h = Math.round(Math.random() * 10);
-if (f + g <= h || f + h <= g || g + h <= f) {
-  console.log("Negali susidaryti trikampis");
-} else console.log("Gali susidaryti trikampis");
+if (f + g > h || f + h > g || g + h > f) {
+  console.log("gali susidaryti trikampis");
+} else console.log("negali susidaryti trikampis");
 
 console.log(f, g, h);
 
